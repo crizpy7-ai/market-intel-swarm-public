@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { to: '/', label: 'DASHBOARD' },
   { to: '/playbook', label: 'PLAYBOOK' },
   { to: '/history', label: 'HISTORY' },
+  { to: '/track-record', label: 'TRACK RECORD' },
   { to: '/methodology', label: 'METHODOLOGY' },
 ]
 
