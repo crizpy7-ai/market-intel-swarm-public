@@ -17,6 +17,7 @@ import {
 } from 'react'
 import type { ReactNode } from 'react'
 import fallbackSnapshot from '@/data/fallback-run.json'
+import fallbackGrades from '@/data/fallback-grades.json'
 
 /* ------------------------------------------------------------------ */
 /* Types — mirror the payload schema exactly                           */
@@ -263,6 +264,44 @@ export async function fetchRunHistory(): Promise<SwarmRunSummary[]> {
 /** Bundled offline snapshot (Sep 1, 2026 run). */
 export function getFallbackRun(): SwarmRun {
   return fallbackSnapshot as unknown as SwarmRun
+}
+
+/* ------------------------------------------------------------------ */
+/* Track record — graded playbook picks (swarm_grades table)           */
+/* ------------------------------------------------------------------ */
+
+export interface Grade {
+  run_date: string
+  pick_type: 'call' | 'put' | 'stock' | string
+  underlying: string
+  contract: string
+  direction: 'long' | 'short' | string
+  entry: string
+  target: string
+  stop: string
+  confidence: number
+  result: 'WIN' | 'LOSS' | 'FLAT' | 'OPEN' | string
+  result_note: string
+  day_open: number
+  day_high: number
+  day_low: number
+  day_close: number
+}
+
+const GRADES_URL =
+  'https://bjnkgxkcbbnbtazelsjs.supabase.co/rest/v1/swarm_grades' +
+  '?select=run_date,pick_type,underlying,contract,direction,entry,target,stop,' +
+  'confidence,result,result_note,day_open,day_high,day_low,day_close' +
+  '&order=run_date.desc'
+
+/** Fetch all graded picks (newest first). Throws on any error/timeout/non-200. */
+export async function fetchGrades(): Promise<Grade[]> {
+  return fetchJson<Grade[]>(GRADES_URL)
+}
+
+/** Bundled offline grades snapshot (Sep 1, 2026 session). */
+export function getFallbackGrades(): Grade[] {
+  return fallbackGrades as Grade[]
 }
 
 /* ------------------------------------------------------------------ */
