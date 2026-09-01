@@ -494,7 +494,7 @@ export function fmtUtcTime(iso: string): string {
   return `${String(d.getUTCHours()).padStart(2, '0')}:${String(d.getUTCMinutes()).padStart(2, '0')}`
 }
 
-/** Long display date, e.g. " 1, 2026". */
+/** Long display date, e.g. "Tuesday, September 1, 2026". */
 export function fmtLongDate(runDate: string): string {
   const d = new Date(`${runDate}T12:00:00Z`)
   if (Number.isNaN(d.getTime())) return runDate
