@@ -1,0 +1,57 @@
+/* History page — scoped animation helpers (archive scope only). */
+
+/* LATEST chip pulse: opacity 1 → 0.4, 1.4s infinite. */
+@keyframes latestChipPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.latest-chip {
+  animation: latestChipPulse 1.4s ease-in-out infinite;
+}
+
+/* Skeleton shimmer: 200px gradient sweep, 1.2s loop. */
+@keyframes archiveShimmer {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.archive-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.archive-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.055),
+    transparent
+  );
+  animation: archiveShimmer 1.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .latest-chip {
+    animation: none;
+  }
+  .archive-shimmer::after {
+    animation: none;
+    display: none;
+  }
+}

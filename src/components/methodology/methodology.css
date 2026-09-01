@@ -1,0 +1,62 @@
+/* Methodology page — scoped animation helpers (methodology scope only). */
+
+/* Hero scroll cue: 1px vertical line grows/shrinks on a 2s loop. */
+@keyframes scrollCueLine {
+  0%,
+  100% {
+    transform: scaleY(0.25);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.scroll-cue-line {
+  transform-origin: top center;
+  animation: scrollCueLine 2s ease-in-out infinite;
+}
+
+/* Stage 11 beat: VERIFYING… blinks twice, then holds. */
+@keyframes verifyingBlink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.verifying-blink {
+  animation: verifyingBlink 0.45s step-end 2;
+}
+
+/* Data-source icons: stroke draw-in (600ms) once the grid is in view. */
+@keyframes srcIconDraw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.src-icon svg * {
+  stroke-dasharray: 80;
+  stroke-dashoffset: 80;
+}
+
+.src-icon.src-icon-on svg * {
+  animation: srcIconDraw 0.6s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue-line,
+  .verifying-blink {
+    animation: none;
+  }
+  .src-icon svg *,
+  .src-icon.src-icon-on svg * {
+    stroke-dasharray: none;
+    stroke-dashoffset: 0;
+    animation: none;
+  }
+}
