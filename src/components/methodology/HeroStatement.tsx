@@ -77,7 +77,7 @@ export function HeroStatement() {
                 className={cn('inline-block', w.teal && 'text-phosphor')}
               >
                 {w.text}
-                {i < WORDS.length - 1 ? ' ' : ''}
+                {i < WORDS.length - 1 ? ' ' : ''}
               </motion.span>
             ),
           )}
