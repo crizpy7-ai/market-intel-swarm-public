@@ -1,0 +1,749 @@
+{
+  "run_date": "2026-09-01",
+  "generated_at_utc": "2026-09-01T02:20:00Z",
+  "market_status": "open",
+  "session_label": "pre-market",
+  "overnight": [
+    {
+      "symbol": "ES=F",
+      "name": "S&P 500 Fut",
+      "price": 7701.25,
+      "chg": 0.03,
+      "note": "Flat \u2014 wait-for-ISM mode"
+    },
+    {
+      "symbol": "NQ=F",
+      "name": "Nasdaq 100 Fut",
+      "price": 29492.0,
+      "chg": -0.07,
+      "note": "Slight tech hesitation"
+    },
+    {
+      "symbol": "RTY=F",
+      "name": "Russell 2000 Fut",
+      "price": 2961.4,
+      "chg": 0.09,
+      "note": "Small-caps quietly bid"
+    },
+    {
+      "symbol": "YM=F",
+      "name": "Dow Fut",
+      "price": 53312.0,
+      "chg": 0.14,
+      "note": "Cyclical tilt"
+    },
+    {
+      "symbol": "^VIX",
+      "name": "VIX",
+      "price": 14.92,
+      "chg": 3.4,
+      "note": "Low but perking up overnight"
+    },
+    {
+      "symbol": "^TNX",
+      "name": "10Y Yield",
+      "price": 4.758,
+      "chg": 0.81,
+      "note": "Rising \u2014 oil-led inflation repricing",
+      "warn": true
+    },
+    {
+      "symbol": "DX=F",
+      "name": "DXY",
+      "price": 99.48,
+      "chg": 0.05,
+      "note": "Dollar quiet"
+    },
+    {
+      "symbol": "CL=F",
+      "name": "WTI Crude",
+      "price": 86.4,
+      "chg": 0.75,
+      "note": "Elevated on Hormuz; day high $86.73",
+      "warn": true
+    },
+    {
+      "symbol": "GC=F",
+      "name": "Gold",
+      "price": 4493.8,
+      "chg": 0.27,
+      "note": "Near record \u2014 safe-haven bid intact"
+    },
+    {
+      "symbol": "BTC-USD",
+      "name": "Bitcoin",
+      "price": 78268,
+      "chg": 1.05,
+      "note": "Risk appetite not broken"
+    }
+  ],
+  "global_markets": [
+    {
+      "name": "Nikkei 225",
+      "price": 66369.48,
+      "chg": 0.09,
+      "state": "live",
+      "note": "Flat"
+    },
+    {
+      "name": "Hang Seng",
+      "price": 25358.33,
+      "chg": -0.82,
+      "state": "live",
+      "note": "China/HK soft"
+    },
+    {
+      "name": "Shanghai Comp",
+      "price": 3983.44,
+      "chg": -0.07,
+      "state": "live",
+      "note": "Flat"
+    },
+    {
+      "name": "DAX",
+      "price": 26258.11,
+      "chg": -1.17,
+      "state": "closed",
+      "note": "Sold off Monday on escalation fears"
+    },
+    {
+      "name": "Euro Stoxx 50",
+      "price": 6420.16,
+      "chg": -1.01,
+      "state": "closed",
+      "note": "Risk-off Monday"
+    },
+    {
+      "name": "FTSE 100",
+      "price": 10824.26,
+      "chg": 0.29,
+      "state": "closed",
+      "note": "Energy-heavy index held up"
+    }
+  ],
+  "headlines": [
+    {
+      "tag": "GEOPOLITICS",
+      "tone": "risk",
+      "text": "US and Iran resume hostilities in the Middle East; Strait of Hormuz transits remain severely constrained (EIA: ~0.6 mb/d disruptions through next year; Brent ~$85 Q3-26E)."
+    },
+    {
+      "tag": "AI / TECH",
+      "tone": "bull",
+      "text": "NVDA beat-and-raise last Thursday lifted semis and neoclouds (CRWV, NBIS, IREN); cybersecurity rallied on twin beats (OKTA +22%, CRWD +13%); CRM soared on Q2."
+    },
+    {
+      "tag": "TESLA",
+      "tone": "bull",
+      "text": "TSLA +5.5% Monday on 46% above-avg volume into Thursday's invite-only Cybercab launch in Austin; +18% in August."
+    },
+    {
+      "tag": "M&A",
+      "tone": "neutral",
+      "text": "Aon nearing ~$17B acquisition of USI Insurance from KKR."
+    },
+    {
+      "tag": "ENERGY",
+      "tone": "bull",
+      "text": "Energy-led premarket: Tenaris, Halliburton, Equinor, APA, PSX (52-wk highs) bid as WTI holds $86+."
+    }
+  ],
+  "calendar": [
+    {
+      "time": "9:05 AM",
+      "event": "Fed's Michael Barr speaks",
+      "consensus": "\u2014",
+      "prior": "\u2014",
+      "importance": "med"
+    },
+    {
+      "time": "9:45 AM",
+      "event": "S&P Final Mfg PMI (Aug)",
+      "consensus": "\u2014",
+      "prior": "\u2014",
+      "importance": "low"
+    },
+    {
+      "time": "10:00 AM",
+      "event": "ISM Manufacturing PMI (Aug)",
+      "consensus": "~55.0\u201355.2",
+      "prior": "55.6 (highest since May 2022)",
+      "importance": "high"
+    },
+    {
+      "time": "10:00 AM",
+      "event": "Construction Spending (Jul)",
+      "consensus": "\u2014",
+      "prior": "\u2014",
+      "importance": "low"
+    },
+    {
+      "time": "10:00 AM",
+      "event": "JOLTS Job Openings (Jul)",
+      "consensus": "\u2014",
+      "prior": "7.5M (Jun)",
+      "importance": "med"
+    },
+    {
+      "time": "Wed",
+      "event": "ADP Employment + Beige Book",
+      "consensus": "\u2014",
+      "prior": "\u2014",
+      "importance": "med"
+    },
+    {
+      "time": "Thu",
+      "event": "ISM Services + Jobless Claims; Waller speaks",
+      "consensus": "\u2014",
+      "prior": "\u2014",
+      "importance": "med"
+    },
+    {
+      "time": "Fri 8:30",
+      "event": "AUGUST JOBS REPORT",
+      "consensus": "\u2014",
+      "prior": "NFP \u221223k, U3 4.1% (Jul)",
+      "importance": "high"
+    }
+  ],
+  "earnings": {
+    "bmo": [
+      {
+        "ticker": "MDT",
+        "name": "Medtronic",
+        "est": "$1.39",
+        "note": "Indicated +1.5% overnight ($92.00) \u2014 suggests beat"
+      },
+      {
+        "ticker": "NIO",
+        "name": "NIO Inc",
+        "est": "\u2212$0.33",
+        "note": "China EV read-through"
+      },
+      {
+        "ticker": "YEXT",
+        "name": "Yext",
+        "est": "\u2014",
+        "note": ""
+      }
+    ],
+    "amc": [
+      {
+        "ticker": "DELL",
+        "name": "Dell",
+        "est": "$4.91",
+        "note": "AI-server demand read-through"
+      },
+      {
+        "ticker": "PANW",
+        "name": "Palo Alto",
+        "est": "$0.98",
+        "note": "Cybersecurity momentum check"
+      },
+      {
+        "ticker": "MDB",
+        "name": "MongoDB",
+        "est": "$1.62",
+        "note": ""
+      },
+      {
+        "ticker": "GTLB",
+        "name": "GitLab",
+        "est": "$0.18",
+        "note": ""
+      },
+      {
+        "ticker": "CRDO",
+        "name": "Credo Tech",
+        "est": "$1.17",
+        "note": "AI connectivity"
+      }
+    ],
+    "week": [
+      {
+        "ticker": "AVGO",
+        "name": "Broadcom (Wed AMC)",
+        "est": "$3.24 (+91.7% YoY); rev $29.4B (+84.9% YoY)",
+        "note": "The week's AI bellwether"
+      },
+      {
+        "ticker": "LULU",
+        "name": "Lululemon (Thu AMC)",
+        "est": "\u2014",
+        "note": ""
+      },
+      {
+        "ticker": "ZS",
+        "name": "Zscaler (Thu AMC)",
+        "est": "\u2014",
+        "note": ""
+      }
+    ]
+  },
+  "sec_filings": [
+    {
+      "ticker": "NVDA",
+      "date": "2026-08-26",
+      "item": "8-K Item 2.02",
+      "description": "Q2 FY27 results of operations (earnings release)"
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-08-17",
+      "item": "8-K Items 1.01/2.03/7.01",
+      "description": "Material definitive agreement + direct financial obligation (financing event)"
+    },
+    {
+      "ticker": "TSLA",
+      "date": "\u2014",
+      "item": "none since Aug 15",
+      "description": "No fresh 8-K; Cybercab event not SEC-filed"
+    },
+    {
+      "ticker": "AMZN",
+      "date": "\u2014",
+      "item": "none since Aug 15",
+      "description": "No material filings overnight"
+    }
+  ],
+  "options_flow": [
+    {
+      "ticker": "NVDA",
+      "expiry": "2026-09-04",
+      "pcr_vol": 0.39,
+      "pcr_oi": 0.69,
+      "atm_iv": 36,
+      "exp_move": 2.8,
+      "signal": "bullish",
+      "detail": "Aggressive call buying \u2014 65k @ 225C, 53k @ 230C; call OI walls 235/245"
+    },
+    {
+      "ticker": "TSLA",
+      "expiry": "2026-09-04",
+      "pcr_vol": 0.58,
+      "pcr_oi": 0.89,
+      "atm_iv": 50,
+      "exp_move": 4.1,
+      "signal": "bullish",
+      "detail": "25k @ 400C lottery positioning; heavy 360\u2013370C volume into Cybercab"
+    },
+    {
+      "ticker": "SPY",
+      "expiry": "2026-09-02",
+      "pcr_vol": 1.1,
+      "pcr_oi": 1.76,
+      "atm_iv": 11,
+      "exp_move": 0.6,
+      "signal": "defensive",
+      "detail": "766 put = 14.6k OI support shelf; 770 top call wall"
+    },
+    {
+      "ticker": "QQQ",
+      "expiry": "2026-09-02",
+      "pcr_vol": 1.43,
+      "pcr_oi": 2.78,
+      "atm_iv": 15,
+      "exp_move": 0.9,
+      "signal": "defensive",
+      "detail": "Heavy index put hedging into jobs week"
+    },
+    {
+      "ticker": "AMZN",
+      "expiry": "2026-09-04",
+      "pcr_vol": null,
+      "pcr_oi": null,
+      "atm_iv": null,
+      "exp_move": null,
+      "signal": "bearish",
+      "detail": "Downside strikes most active: 255P 10.4k vol, 260P 5.5k"
+    }
+  ],
+  "institutional": [
+    {
+      "tag": "POSITIONING",
+      "text": "Hedge funds de-grossed in July (largest since 2020/2022); documented September re-buying pattern = early-month dip demand."
+    },
+    {
+      "tag": "13F FLOW",
+      "text": "Institutional accumulation in energy (Alyeska, Jupiter in TRGP; Rakuten/Corient in APA) \u2014 smart money long the oil shock."
+    },
+    {
+      "tag": "SECTOR BID",
+      "text": "Premarket leaderboard dominated by energy: Tenaris +3.9%, HAL, EQNR, APA, PSX (52-wk high), TRGP +2.4%."
+    }
+  ],
+  "sentiment": {
+    "composite": "Cautiously constructive \u2014 hedged-long posture",
+    "gauges": [
+      {
+        "name": "VIX",
+        "reading": "14.92 (+3.4% o/n)",
+        "bias": "neutral-cautious"
+      },
+      {
+        "name": "Index put/call OI",
+        "reading": "SPY 1.76 / QQQ 2.78",
+        "bias": "defensive"
+      },
+      {
+        "name": "Single-name flow",
+        "reading": "NVDA/TSLA call-led",
+        "bias": "bullish"
+      },
+      {
+        "name": "Gold ~$4,490 + rising yields",
+        "reading": "Stagflation hedge demand",
+        "bias": "cautious"
+      },
+      {
+        "name": "Trend",
+        "reading": "SPX above rising 50/200-DMA",
+        "bias": "bullish"
+      }
+    ]
+  },
+  "technicals": [
+    {
+      "ticker": "SPY",
+      "last": 767.05,
+      "rsi": 45.9,
+      "ma20": 769.7,
+      "ma50": 754.4,
+      "hi20": 779.4,
+      "lo20": 760.5,
+      "atr": 5.04,
+      "support": [
+        766,
+        763,
+        760
+      ],
+      "resistance": [
+        770,
+        775,
+        779
+      ]
+    },
+    {
+      "ticker": "QQQ",
+      "last": 716.76,
+      "rsi": 48.7,
+      "ma20": 718.8,
+      "ma50": 711.6,
+      "hi20": 734.6,
+      "lo20": 702.7,
+      "atr": 8.16,
+      "support": [
+        715,
+        710,
+        703
+      ],
+      "resistance": [
+        724,
+        727,
+        735
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "last": 220.78,
+      "rsi": 52.5,
+      "ma20": 218.8,
+      "ma50": 208.6,
+      "hi20": 230.5,
+      "lo20": 207.3,
+      "atr": 6.81,
+      "support": [
+        217,
+        209
+      ],
+      "resistance": [
+        225,
+        230,
+        236.5
+      ]
+    },
+    {
+      "ticker": "TSLA",
+      "last": 367.95,
+      "rsi": 65.0,
+      "ma20": 341.1,
+      "ma50": 359.8,
+      "hi20": 368.9,
+      "lo20": 315.5,
+      "atr": 13.51,
+      "support": [
+        360,
+        345
+      ],
+      "resistance": [
+        369,
+        380,
+        400
+      ]
+    },
+    {
+      "ticker": "AMD",
+      "last": 470.72,
+      "rsi": 48.8,
+      "ma20": 481.3,
+      "ma50": 504.7,
+      "hi20": 530.1,
+      "lo20": 451.0,
+      "atr": 19.09,
+      "support": [
+        464,
+        451
+      ],
+      "resistance": [
+        478,
+        491,
+        504
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "last": 259.77,
+      "rsi": 38.1,
+      "ma20": 265.7,
+      "ma50": 252.0,
+      "hi20": 282.8,
+      "lo20": 255.0,
+      "atr": 5.93,
+      "support": [
+        257,
+        255,
+        252
+      ],
+      "resistance": [
+        265.7,
+        267.6
+      ]
+    },
+    {
+      "ticker": "META",
+      "last": 572.34,
+      "rsi": 40.3,
+      "ma20": 574.9,
+      "ma50": 592.1,
+      "hi20": 612.4,
+      "lo20": 537.3,
+      "atr": 18.01,
+      "support": [
+        571,
+        561
+      ],
+      "resistance": [
+        580,
+        590,
+        593
+      ]
+    },
+    {
+      "ticker": "XLE",
+      "last": 63.96,
+      "rsi": 72.0,
+      "ma20": 61.5,
+      "ma50": 58.4,
+      "hi20": 64.7,
+      "lo20": 57.1,
+      "atr": 1.09,
+      "support": [
+        63.1,
+        62.1
+      ],
+      "resistance": [
+        64.7,
+        65.5
+      ]
+    }
+  ],
+  "cross_verification": [
+    {
+      "claim": "Energy shock is the dominant macro risk",
+      "agree": "5/5",
+      "evidence": "WTI +0.75% live; XLE 52-wk high; energy-led premarket; hawkish-Fed/oil>$90 narrative; gold bid",
+      "verdict": "confirmed"
+    },
+    {
+      "claim": "AI trade intact",
+      "agree": "4/5",
+      "evidence": "NVDA P/C vol 0.39; NVDA +1.5% Mon; semis lead premarket; DELL/PANW/AVGO catalysts pending",
+      "verdict": "confirmed w/ event risk"
+    },
+    {
+      "claim": "Index-level complacency",
+      "agree": "divergence",
+      "evidence": "QQQ OI P/C 2.78 vs flat futures \u2014 institutions buying protection, not selling stock; 10:00 AM ISM is the tie-breaker",
+      "verdict": "watch"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "Hormuz escalation \u2192 Brent >$95",
+      "severity": "high",
+      "likelihood": "medium",
+      "note": "Headline gap risk both ways"
+    },
+    {
+      "risk": "ISM miss (<54) at 10:00 AM",
+      "severity": "medium",
+      "likelihood": "medium",
+      "note": "Validates QQQ hedges"
+    },
+    {
+      "risk": "TSLA sell-the-news post-Cybercab (Thu)",
+      "severity": "medium",
+      "likelihood": "med-high",
+      "note": "IV 50% = event priced"
+    },
+    {
+      "risk": "Hot ISM Prices Paid \u2192 10Y >4.80%",
+      "severity": "medium",
+      "likelihood": "medium",
+      "note": "Pressures megacap multiples"
+    },
+    {
+      "risk": "Friday jobs report binary",
+      "severity": "high",
+      "likelihood": "\u2014",
+      "note": "Post \u221223k July print; size accordingly"
+    }
+  ],
+  "opportunities": [
+    {
+      "rank": 1,
+      "name": "NVDA long",
+      "thesis": "Momentum + cheapest IV (rank 0%) + call-flow confirmed",
+      "confidence": 65
+    },
+    {
+      "rank": 2,
+      "name": "TSLA long (intraday)",
+      "thesis": "Cybercab momentum, defined event window",
+      "confidence": 60
+    },
+    {
+      "rank": 3,
+      "name": "Energy (XLE) long",
+      "thesis": "Geopolitical trend; overbought \u2014 size small",
+      "confidence": 58
+    },
+    {
+      "rank": 4,
+      "name": "AMZN short",
+      "thesis": "Weakest megacap; put flow; broken levels",
+      "confidence": 57
+    },
+    {
+      "rank": 5,
+      "name": "SPY range 766\u2013770",
+      "thesis": "Pinning into ISM; cheap IV",
+      "confidence": 55
+    }
+  ],
+  "playbook": {
+    "master_switch": "10:00 AM ISM (cons ~55.0\u201355.2). >55 with easing yields \u2192 favor calls/longs; <54 or Hormuz spike \u2192 favor puts/shorts.",
+    "calls": [
+      {
+        "underlying": "NVDA",
+        "contract": "$225 Call \u00b7 Sep 4",
+        "entry": "$1.30\u2013$1.60",
+        "target": "$2.40\u2013$3.00 (stk $226\u2013230)",
+        "stop": "$0.85 (\u221245%)",
+        "confidence": 65,
+        "rationale": "Blowout Q2 +1.5% Mon; P/C vol 0.39 with 65k @ 225C; IV rank 0% = cheap premium; DELL/PANW/CRDO tonight + AVGO Wed = sympathy catalysts.",
+        "invalidation": "Stock loses $217 (Mon low / 20-DMA 218.8) or ISM <54 sparks Nasdaq-wide selloff (NQ < ~29,300)."
+      },
+      {
+        "underlying": "TSLA",
+        "contract": "$370 Call \u00b7 Sep 4",
+        "entry": "$6.00\u2013$7.00 (only if $369 holds)",
+        "target": "$10\u2013$12 (stk $380\u2013385)",
+        "stop": "$4.20",
+        "confidence": 58,
+        "rationale": "+5.5% on 46% above-avg volume into Thu Cybercab; 25k @ 400C shows speculative chase. Momentum trade \u2014 not a hold-through-Thursday trade (IV 50%).",
+        "invalidation": "Break below $360 (psych + call-OI shelf) or overnight gap-down on Iran headlines hitting high-beta."
+      },
+      {
+        "underlying": "SPY",
+        "contract": "$770 Call \u00b7 Sep 2",
+        "entry": "$1.00\u2013$1.25",
+        "target": "$2.00\u2013$2.60 (SPY 772\u2013775)",
+        "stop": "$0.60",
+        "confidence": 55,
+        "rationale": "ATM IV ~10\u201311% underprices an ISM morning (\u00b10.6% implied). $770 = top call-OI wall; strong ISM likely magnet-pushes through toward 775.",
+        "invalidation": "SPY < $766 (14.6k put-OI shelf) pre-ISM, or ES < 7,690 before 9:30."
+      }
+    ],
+    "puts": [
+      {
+        "underlying": "AMZN",
+        "contract": "$255 Put \u00b7 Sep 4",
+        "entry": "$1.20\u2013$1.50",
+        "target": "$2.60\u2013$3.40 (stk $252\u2013253)",
+        "stop": "$0.75",
+        "confidence": 57,
+        "rationale": "Weakest megacap: \u22122.5% Mon, RSI 38, below 20-DMA (265.7); 255P most-traded put (10.4k). Break of 257.78 (Mon low) opens 20-day low at 255.",
+        "invalidation": "Reclaim of $262.5+ (back inside last week's range) or broad melt-up post-ISM."
+      },
+      {
+        "underlying": "QQQ",
+        "contract": "$710 Put \u00b7 Sep 2",
+        "entry": "$0.95\u2013$1.20",
+        "target": "$2.20\u2013$3.00 (QQQ 706\u2013703)",
+        "stop": "$0.55",
+        "confidence": 55,
+        "rationale": "OI P/C 2.78 = institutions positioned for a dip; rising 10Y (4.76%) + hot oil pressures Nasdaq multiples. Trigger: ISM <54.5 or hot Prices Paid.",
+        "invalidation": "ISM \u226555.5 with yields falling, or QQQ holds > $724 (Mon high) through the first hour."
+      },
+      {
+        "underlying": "META",
+        "contract": "$560 Put \u00b7 Sep 4",
+        "entry": "$3.40\u2013$3.80",
+        "target": "$6.00\u2013$7.50 (stk $552\u2013550)",
+        "stop": "$2.20",
+        "confidence": 52,
+        "rationale": "Below 50-DMA (592) and 20-DMA (575), RSI 40 \u2014 downtrend in an up market = persistent relative weakness. Heavy 560/550 put OI.",
+        "invalidation": "Recovery above $580 (Mon breakdown area) or mega-cap breadth thrust post-ISM."
+      }
+    ],
+    "stocks": [
+      {
+        "ticker": "NVDA",
+        "bias": "long",
+        "catalyst": "Post-earnings momentum + tonight's DELL/CRDO/PANW AI-infra prints",
+        "levels": "Long $219\u2013221; add > $225 (flow wall); target $230 (20d high)",
+        "invalidation": "Below $216.8 (Mon low)"
+      },
+      {
+        "ticker": "TSLA",
+        "bias": "long (momentum only)",
+        "catalyst": "Cybercab event Thu; FSD/robotaxi narrative",
+        "levels": "Continuation > $369 (Mon high) \u2192 $380; pullback zone $360\u2013362",
+        "invalidation": "Below $355 (loses Mon midpoint + put-OI cluster); RSI 65 \u2014 don't chase weakness"
+      },
+      {
+        "ticker": "XLE",
+        "bias": "long",
+        "catalyst": "US-Iran hostilities; WTI $86+; sector-wide premarket strength",
+        "levels": "Long $63.50\u201364.00 \u2192 $64.70 (52wH) then $65.50",
+        "invalidation": "Below $62.10 (Mon low) or verified ceasefire headline; RSI 72 \u2014 trade smaller"
+      },
+      {
+        "ticker": "AMZN",
+        "bias": "short",
+        "catalyst": "Technical breakdown + put-flow confirmation",
+        "levels": "Short $260\u2013262 or < $257.75; target $255 then $252 (50-DMA)",
+        "invalidation": "Above $265 (20-DMA reclaim)"
+      },
+      {
+        "ticker": "MDT",
+        "bias": "long (earnings momentum)",
+        "catalyst": "Q1 print BMO today; overnight +1.5% to $92 suggests beat",
+        "levels": "Confirm numbers 7\u20138 AM; long opening-range breakout only if above premarket VWAP",
+        "invalidation": "Gap-fill below Mon close $91.23 \u2014 faded earnings strength = reversal signal"
+      }
+    ]
+  },
+  "disclaimer": "Research/educational analysis only \u2014 NOT financial advice. 0DTE/short-dated options can go to zero. Data basis: Mon 8/31 close + overnight futures; verify at the open. Sources: Yahoo Finance market/options data, SEC EDGAR, public financial news wires."
+}
