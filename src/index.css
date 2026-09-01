@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 216 38% 5%;
+    --foreground: 216 33% 93%;
+    --card: 219 37% 7%;
+    --card-foreground: 216 33% 93%;
+    --popover: 219 37% 7%;
+    --popover-foreground: 216 33% 93%;
+    --primary: 174 72% 56%;
+    --primary-foreground: 216 38% 5%;
+    --secondary: 219 37% 10%;
+    --secondary-foreground: 216 33% 93%;
+    --muted: 219 37% 10%;
+    --muted-foreground: 217 16% 60%;
+    --accent: 219 37% 10%;
+    --accent-foreground: 174 72% 56%;
+    --destructive: 353 100% 68%;
+    --destructive-foreground: 216 33% 93%;
+    --border: 217 31% 15%;
+    --input: 217 31% 15%;
+    --ring: 174 72% 56%;
+    --radius: 0.25rem;
+    --sidebar-background: 216 38% 5%;
+    --sidebar-foreground: 216 33% 93%;
+    --sidebar-primary: 174 72% 56%;
+    --sidebar-primary-foreground: 216 38% 5%;
+    --sidebar-accent: 219 37% 10%;
+    --sidebar-accent-foreground: 216 33% 93%;
+    --sidebar-border: 217 31% 15%;
+    --sidebar-ring: 174 72% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-abyss text-ink font-sans antialiased;
+    font-size: 14px;
+    line-height: 1.55;
+    background-image: radial-gradient(circle, #141c28 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .font-mono,
+  code,
+  kbd {
+    font-variant-numeric: tabular-nums;
+  }
+
+  ::selection {
+    background: rgba(94, 234, 212, 0.22);
+    color: #e8edf4;
+  }
+
+  :focus-visible {
+    outline: 1px solid #5eead4;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(94, 234, 212, 0.25);
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #070a0f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1b2534;
+    border: 2px solid #070a0f;
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2a3850;
+  }
+}
+
+@layer utilities {
+  /* Ultra-subtle fixed scanline overlay (2px lines, 3% white) */
+  .scanlines::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 70;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .scanlines::after {
+    display: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
